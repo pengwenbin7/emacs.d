@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: blog
+# key: blog_
+# --
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://pengwenbin7.github.io/static/css/solarized-light.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://pengwenbin7.github.io/static/css/blog.css"/>
+
+#+HTML_HEAD: <script type="text/javascript" src="https://pengwenbin7.github.io/static/js/blog.js"></script>
+
+#+OPTIONS: ^:{} 
+#+OPTIONS: _:{}
+#+AUTHOR: [[mailto:pengwenbin7@126.com][pengwenbin7]]
+#+TITLE: ${1:Document}
+
+$0

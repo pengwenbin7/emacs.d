@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: article
+# key: article_
+# --
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+#+HTML_HEAD: <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+#+HTML_HEAD: <link rel="stylesheet" href="https://pengwenbin7.github.io/static/readtheorg/css/htmlize.css">
+#+HTML_HEAD: <link rel="stylesheet" href="https://pengwenbin7.github.io/static/readtheorg/css/readtheorg.css">
+#+HTML_HEAD: <link rel="stylesheet" href="https://pengwenbin7.github.io/static/readtheorg/css/rtd-full.css">
+#+HTML_HEAD: <link rel="stylesheet" href="https://pengwenbin7.github.io/static/css/article.css">
+#+HTML_HEAD: <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script src="https://pengwenbin7.github.io/static/js/article.js"></script>
+#+HTML_HEAD: <script src="https://pengwenbin7.github.io/static/readtheorg/js/readtheorg.js"></script>
+#+OPTIONS: ^:{} 
+#+OPTIONS: _:{}
+#+AUTHOR: [[mailto:pengwenbin7@126.com][pengwenbin7]]
+#+TITLE: ${1:Document}
+
+$0
