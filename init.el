@@ -28,14 +28,36 @@
  '(global-hl-line-mode t)
  '(global-linum-mode t)
  '(inhibit-startup-screen t)
+ '(org-babel-load-languages (quote ((emacs-lisp . t) (python . t))))
+ '(org-babel-python-command "/home/xl/bin/anaconda3/bin/python3")
  '(org-export-backends (quote (ascii html icalendar latex md odt)))
+ '(org-format-latex-header
+   "\\documentclass{article}
+\\usepackage[UTF8, heading = true]{ctex}
+\\usepackage[usenames]{color}
+[PACKAGES]
+[DEFAULT-PACKAGES]
+\\pagestyle{empty}             % do not remove
+% The settings below are copied from fullpage.sty
+\\setlength{\\textwidth}{\\paperwidth}
+\\addtolength{\\textwidth}{-3cm}
+\\setlength{\\oddsidemargin}{1.5cm}
+\\addtolength{\\oddsidemargin}{-2.54cm}
+\\setlength{\\evensidemargin}{\\oddsidemargin}
+\\setlength{\\textheight}{\\paperheight}
+\\addtolength{\\textheight}{-\\headheight}
+\\addtolength{\\textheight}{-\\headsep}
+\\addtolength{\\textheight}{-\\footskip}
+\\addtolength{\\textheight}{-3cm}
+\\setlength{\\topmargin}{1.5cm}
+\\addtolength{\\topmargin}{-2.54cm}")
  '(org-format-latex-options
    (quote
     (:foreground "Black" :background "Transparent" :scale 1.0 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
 		 ("begin" "$1" "$" "$$" "\\(" "\\["))))
  '(org-html-mathjax-options
    (quote
-    ((path "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_SVG")
+    ((path "https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS_SVG")
      (scale "100")
      (align "center")
      (font "TeX")
@@ -46,23 +68,6 @@
      (tagindent ".8em")
      (tagside "right"))))
  '(org-latex-compiler "xelatex")
- '(org-latex-default-packages-alist
-   (quote
-    (("AUTO" "inputenc" t nil)
-     ("T1" "fontenc" t nil)
-     ("" "graphicx" t nil)
-     ("" "grffile" t nil)
-     ("" "longtable" nil nil)
-     ("" "wrapfig" nil nil)
-     ("" "rotating" nil nil)
-     ("normalem" "ulem" t nil)
-     ("" "amsmath" t
-      ("pdflatex"))
-     ("" "textcomp" t nil)
-     ("" "amssymb" t
-      ("pdflatex"))
-     ("" "capt-of" nil nil)
-     ("" "hyperref" nil nil))))
  '(org-preview-latex-process-alist
    (quote
     ((dvipng :programs
@@ -72,7 +77,7 @@
 	     :latex-compiler
 	     ("latex -interaction nonstopmode -output-directory %o %f")
 	     :image-converter
-	     ("dvipng -fg %F -bg %B -D 300 -T tight -o %O %f"))
+	     ("dvipng -fg %F -bg %B -D 200 -T tight -o %O %f"))
      (dvisvgm :programs
 	      ("latex" "dvisvgm")
 	      :description "dvi > svg" :message "you need to install the programs: latex and dvisvgm." :use-xcolor t :image-input-type "dvi" :image-output-type "svg" :image-size-adjust
@@ -91,8 +96,8 @@
 		  ("convert -density %D -trim -antialias %f -quality 100 %O")))))
  '(package-selected-packages
    (quote
-    (git magit markdown-preview-mode markdown-mode yasnippet matlab matlab-mode htmlize ac-php php-mode yasnippet-snippets py-yapf py-autopep8 jedi emmet-mode js2-mode web-mode flycheck elpy use-package seethru golden-ratio-scroll-screen golden-ratio)))
- '(python-shell-interpreter "python3")
+    (apache-mode nginx-mode git magit markdown-preview-mode markdown-mode yasnippet matlab matlab-mode htmlize ac-php php-mode yasnippet-snippets py-yapf py-autopep8 jedi emmet-mode js2-mode web-mode flycheck elpy use-package seethru golden-ratio-scroll-screen golden-ratio)))
+ '(python-shell-interpreter "/home/xl/bin/anaconda3/bin/python")
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(tool-bar-mode nil)
